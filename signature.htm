@@ -27,14 +27,15 @@
         font-weight: inherit !important;
         line-height: inherit !important;
       }
-      table,
-      td {
-        /* border: 1px solid lightblue; */
+      table {
+        /*S border: 1px solid lightblue; */
         border-collapse: collapse;
         text-align: left;
+      }
+      table td {
         padding: 0;
       }
-      .container {
+      .info {
         width: 220px;
       }
       .logo {
@@ -49,8 +50,9 @@
       .businessHrs .time {
         text-align: right;
       }
-      .days {
-        font-weight: bold;
+      .footer {
+        font-size: 0.8125em;
+        line-height: 0.9em;
       }
     </style>
   </head>
@@ -60,73 +62,79 @@
       Patrick Sarnow <br />
       <i>Geschäftsführer</i>
     </p>
-
-    <table class="container">
-      <tr>
-        <td class="logo" width="220" height="56">
-          <img
-            src="assets/graphics/autohaus-sarnow-logo-grey-website.png"
-            alt="Autohaus Sarnow"
-            width="220"
-            height="56"
-          />
-        </td>
-      </tr>
-      <tr>
-        <td style="padding-top: 20px">
-          <a href="http://autohaus-sarnow.de">autohaus-sarnow.de</a>
-        </td>
-      </tr>
-      <tr>
-        <td style="padding-top: 10px">
-          <a href="tel:492212852727">0221 2852 727</a>
-        </td>
-      </tr>
-      <tr>
-        <td style="padding-top: 10px">
-          <a href="mailto:info@autohaus-sarnow.de">info@autohaus-sarnow.de</a>
-        </td>
-      </tr>
-      <tr>
-        <td style="padding-top: 20px">
-          Klosengartenstraße 34<br />
-          50374 Erftstadt
-        </td>
-      </tr>
-      <tr>
-        <td style="padding-top: 20px">
-          <table class="businessHrs">
-            <tr>
-              <td
-                style="border-bottom: 1px solid #e9e1df; padding-bottom: 10px"
-                class="days"
-              >
-                Montag – Freitag
-              </td>
-              <td
-                style="border-bottom: 1px solid #e9e1df; padding-bottom: 10px"
-                class="time"
-              >
-                8 – 18:00
-              </td>
-            </tr>
-            <tr>
-              <td style="padding-top: 10px" class="days">Samstag</td>
-              <td style="padding-top: 10px" class="time">9 – 14:00</td>
-            </tr>
-          </table>
-        </td>
-      </tr>
+    <table class="info">
+      <tbody>
+        <tr>
+          <td style="padding-top: 20px" class="logo">
+            <img
+              src="assets/graphics/autohaus-sarnow-logo-grey-website.png"
+              alt="Autohaus Sarnow"
+              width="220"
+              height="56"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-top: 20px">
+            <a href="http://autohaus-sarnow.de">autohaus-sarnow.de</a>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-top: 10px">
+            <a href="tel:492212852727">0221 2852 727</a>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-top: 10px">
+            <a href="mailto:info@autohaus-sarnow.de">info@autohaus-sarnow.de</a>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-top: 20px">
+            Klosengartenstraße 34<br />
+            50374 Erftstadt
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-top: 20px; padding-bottom: 20px">
+            <table class="businessHrs">
+              <tbody>
+                <tr>
+                  <td
+                    style="
+                      border-bottom: 1px solid #e9e1df;
+                      padding-bottom: 10px;
+                    "
+                    class="days"
+                  >
+                    <b>Montag</b> – <b>Freitag</b>
+                  </td>
+                  <td
+                    style="
+                      border-bottom: 1px solid #e9e1df;
+                      padding-bottom: 10px;
+                    "
+                    class="time"
+                  >
+                    8 – 18:00
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding-top: 10px" class="days"><b>Samstag</b></td>
+                  <td style="padding-top: 10px" class="time">9 – 14:00</td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
     </table>
-
-    <p>
-      <small>
-        <a href="http://autohaus-sarnow.de/datenschutzerklaerung">
-          Datenschutzerklärung</a
-        >
-        | Autohaus Sarnow • Vertreten durch: Sabine Sarnow • USt-IdNr.: DE
-        295460791
-      </small>
+    <p class="footer">
+      <a href="http://autohaus-sarnow.de/datenschutzerklaerung">
+        Datenschutzerklärung</a
+      >
+      | Autohaus Sarnow • Vertreten durch: Sabine Sarnow • USt-IdNr.: DE
+      295460791
     </p>
   </body>
 </html>
