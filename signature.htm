@@ -14,6 +14,12 @@
       p {
         margin: 20px 0 20px 0;
       }
+
+      /* Fixes Gmail white-space problem. Sometimes (not in the case of nested table elements) Outlook automaticly wraps the content of table cells in p tags if it isn't already. Gmail applies a default margin of of 14px which screws up the spacing. */
+      .pWrapper {
+        margin: 0.1px;
+      }
+
       a {
         color: #079aec !important;
         text-decoration: none !important;
@@ -33,7 +39,7 @@
         text-align: left;
       }
       table td {
-        border: 1px solid lightblue;
+        /* border: 1px solid lightblue; */
         padding: 0;
         margin: 0;
         font-size: 1em;
@@ -66,12 +72,14 @@
     <table class="container">
       <tbody>
         <tr>
-          <td>Mit freundlichen Grüßen</td>
+          <td><p class="pWrapper">Mit freundlichen Grüßen</p></td>
         </tr>
         <tr>
           <td style="padding-top: 20px">
-            Patrick Sarnow <br />
-            <i>Geschäftsführer</i>
+            <p class="pWrapper">
+              Sarnow <br />
+              <i>Geschäftsführer</i>
+            </p>
           </td>
         </tr>
         <tr>
@@ -80,35 +88,45 @@
               <tbody>
                 <tr>
                   <td class="logo">
-                    <img
-                      src="assets/graphics/autohaus-sarnow-logo-grey-website.png"
-                      alt="Autohaus Sarnow"
-                      width="220"
-                      height="56"
-                    />
+                    <p class="pWrapper">
+                      <img
+                        src="assets/graphics/autohaus-sarnow-logo-grey-website.png"
+                        alt="Autohaus Sarnow"
+                        width="220"
+                        height="56"
+                      />
+                    </p>
                   </td>
                 </tr>
                 <tr>
                   <td style="padding-top: 20px">
-                    <a href="http://autohaus-sarnow.de">autohaus-sarnow.de</a>
+                    <p class="pWrapper">
+                      <a href="http://autohaus-sarnow.de">autohaus-sarnow.de</a>
+                    </p>
                   </td>
                 </tr>
                 <tr>
                   <td style="padding-top: 10px">
-                    <a href="tel:492212852727">0221 2852 727</a>
+                    <p class="pWrapper">
+                      <a href="tel:492212852727">0221 2852 727</a>
+                    </p>
                   </td>
                 </tr>
                 <tr>
                   <td style="padding-top: 10px">
-                    <a href="mailto:info@autohaus-sarnow.de"
-                      >info@autohaus-sarnow.de</a
-                    >
+                    <p class="pWrapper">
+                      <a href="mailto:info@autohaus-sarnow.de"
+                        >info@autohaus-sarnow.de</a
+                      >
+                    </p>
                   </td>
                 </tr>
                 <tr>
                   <td style="padding-top: 20px">
-                    Klosengartenstraße 34<br />
-                    50374 Erftstadt
+                    <p class="pWrapper">
+                      Klosengartenstraße 34<br />
+                      50374 Erftstadt
+                    </p>
                   </td>
                 </tr>
                 <tr>
@@ -123,7 +141,9 @@
                             "
                             class="days"
                           >
-                            <b>Montag</b> – <b>Freitag</b>
+                            <p class="pWrapper">
+                              <b>Montag</b> – <b>Freitag</b>
+                            </p>
                           </td>
                           <td
                             style="
@@ -132,15 +152,17 @@
                             "
                             class="time"
                           >
-                            8 – 18:00
+                            <p class="pWrapper">8 – 18:00</p>
                           </td>
                         </tr>
                         <tr>
                           <td style="padding-top: 10px" class="days">
-                            <b>Samstag</b>
+                            <p class="pWrapper">
+                              <b>Samstag</b>
+                            </p>
                           </td>
                           <td style="padding-top: 10px" class="time">
-                            9 – 14:00
+                            <p class="pWrapper">9 – 14:00</p>
                           </td>
                         </tr>
                       </tbody>
@@ -153,11 +175,13 @@
         </tr>
         <tr>
           <td class="footer" style="padding-top: 40px">
-            <a href="http://autohaus-sarnow.de/datenschutzerklaerung">
-              Datenschutzerklärung</a
-            >
-            | Autohaus Sarnow • Vertreten durch: Sabine Sarnow • USt-IdNr.: DE
-            295460791
+            <p class="pWrapper">
+              <a href="http://autohaus-sarnow.de/datenschutzerklaerung">
+                Datenschutzerklärung</a
+              >
+              | Autohaus Sarnow • Vertreten durch: Sabine Sarnow • USt-IdNr.: DE
+              295460791
+            </p>
           </td>
         </tr>
       </tbody>
